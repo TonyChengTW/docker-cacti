@@ -1,7 +1,7 @@
 #name of container: docker-cacti
 #versison of container: 0.5.7
 FROM tonychengtw/cacti:0.0.1
-MAINTAINER Tony Cheng  "tony.pig@gmail.com"
+MAINTAINER Tony Cheng  <tony.pig@gmail.com>
 
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
@@ -80,4 +80,4 @@ COPY spine.conf /etc/cacti/spine.conf
 EXPOSE 7980 161
 
 # Use baseimage-docker's init system.
-CMD ["/sbin/my_init"]
+ENTRYPOINT ["/sbin/my_init"]
