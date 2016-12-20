@@ -19,7 +19,7 @@ To install docker in Ubuntu 14.04 use the commands:
 
 To run container use the command below:
 
-    $ docker run -d -p 80  quantumobject/docker-cacti
+    $ docker run -t -i -p 7980:7980 -p 161:161/udp tonychengtw/cacti:0.0.1 /bin/bash
 
 ** -p 161:161  ==> remove to make sure you can monitor container and server running the container , this second more important to be able to monitoring all network interface of the server.
 
@@ -65,10 +65,6 @@ To restore use the command below:
 ## More Info
 
 About Cacti [www.cacti.net][1]
-
-To help improve this container [quantumobject/docker-cacti][5]
-
-For additional info about us and our projects check our site [www.quantumobject.org][7]
 
 [1]:http://www.cacti.net/
 [2]:https://www.docker.com
