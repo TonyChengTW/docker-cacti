@@ -1,6 +1,10 @@
 #name of container: docker-cacti
 #versison of container: 0.5.7
+<<<<<<< HEAD
 FROM tonychengtw/cacti:0.0.9
+=======
+FROM tonychengtw/cacti:0.0.2
+>>>>>>> d2cdd3b91f3e4a90ef65c6eaba17009375e3a870
 MAINTAINER Tony Cheng  <tony.pig@gmail.com>
 
 # adjust time
