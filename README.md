@@ -19,7 +19,7 @@ To install docker in Ubuntu 14.04 use the commands:
 
 To run container use the command below:
 
-    $ docker run -t -i -p 7980:7980 -p 161:161/udp tonychengtw/cacti:0.0.1 /bin/bash
+    $ docker run --name cacti -t -i -p 7980:7980 -p 161:161/udp tonychengtw/cacti:0.0.1 /bin/bash
 
 ** -p 161:161  ==> remove to make sure you can monitor container and server running the container , this second more important to be able to monitoring all network interface of the server.
 

@@ -3,6 +3,9 @@
 FROM tonychengtw/cacti:0.0.2
 MAINTAINER Tony Cheng  <tony.pig@gmail.com>
 
+# adjust time
+RUN cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+
 #add repository and update the container
 #Installation of nesesary package/software for this containers...
 RUN echo "deb http://archive.ubuntu.com/ubuntu `cat /etc/container_environment/DISTRIB_CODENAME`-backports main restricted " >> /etc/apt/sources.list
