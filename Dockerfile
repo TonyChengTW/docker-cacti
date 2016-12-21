@@ -1,6 +1,6 @@
 #name of container: docker-cacti
 #versison of container: 0.5.7
-FROM tonychengtw/cacti:0.0.2
+FROM tonychengtw/cacti:0.0.9
 MAINTAINER Tony Cheng  <tony.pig@gmail.com>
 
 # adjust time
@@ -67,7 +67,7 @@ RUN chmod +x /sbin/pre-conf ; sync \
 COPY backup.sh /sbin/backup
 COPY restore.sh /sbin/restore
 RUN chmod +x /sbin/backup /sbin/restore
-VOLUME /var/backups
+#VOLUME /var/backups
 
 
 #add files and script that need to be use for this container
