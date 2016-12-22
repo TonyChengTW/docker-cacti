@@ -1,5 +1,5 @@
 #name of container: docker-cacti
-FROM tonychengtw/cacti:0.9.0
+FROM tonychengtw/cacti:0.9.2
 MAINTAINER Tony Cheng  <tony.pig@gmail.com>
 
 # adjust time
